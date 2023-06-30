@@ -5,6 +5,7 @@ const events = require('events');
 
 const {startParsing,eventEmitter} = require('./parseCsv');
 const calculate = require('./calculate');
+const catExp = require('./catExp');
 
 /****************************************************************
  *  Step 1 : Read and clean up scv
@@ -14,6 +15,7 @@ const calculate = require('./calculate');
 eventEmitter.once('PARSECSVCOMPLETED', (e) => { 
     console.log('1. CSV reading and parsing completed');
     calculate();
+    catExp();
  });
 
 startParsing();

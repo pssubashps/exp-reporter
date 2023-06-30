@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "csv-parse": "^5.4.0"
+    "csv-parse": "^5.4.0",
+    "pdfkit": "^0.13.0"
   }
 }
